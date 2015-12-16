@@ -1,0 +1,15 @@
+{% extends "layout.html.twig" %} {% block title %}{% endblock %} {% block content %}
+<div class="jumbotron">
+    <div class="row">
+        <select class="form-control" name="movie">
+            {% for movie in movies %}
+            <option value="{{ movie.id }}">{{ movie.title }} {{ movie.descriptionLong}}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>
+</div>
+
+{% endblock %}
